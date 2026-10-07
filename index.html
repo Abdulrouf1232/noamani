@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Noamani - معلوماتي ویب‌سایټ</title>
+
+    <meta name="description"
+        content="Noamani یو معلوماتي ویب‌سایټ دی چې په پښتو، دري او English ژبو ګټور معلومات وړاندې کوي.">
+
+    <meta name="keywords"
+        content="Noamani, معلومات, پښتو, دري, English, افغانستان, ټیکنالوژي, زده کړه, AI">
+
+    <meta name="author" content="Noamani">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="container header-container">
+
+        <div class="logo">
+            <h1>Noamani</h1>
+        </div>
+
+        <div class="language-switcher">
+
+            <button class="lang-btn active"
+                onclick="switchLanguage('ps')">
+                پښتو
+            </button>
+
+            <button class="lang-btn"
+                onclick="switchLanguage('dr')">
+                دري
+            </button>
+
+            <button class="lang-btn"
+                onclick="switchLanguage('en')">
+                English
+            </button>
+
+        </div>
+
+        <button class="menu-toggle"
+            id="menuToggle"
+            aria-label="Menu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<nav class="main-nav" id="mainNav">
+
+    <div class="container">
+
+        <ul>
+
+            <li>
+                <a href="#home"
+                    class="nav-link active"
+                    data-key="nav_home">
+                    کور پاڼه
+                </a>
+            </li>
+
+            <li>
+                <a href="#about"
+                    class="nav-link"
+                    data-key="nav_about">
+                    زموږ په اړه
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact"
+                    class="nav-link"
+                    data-key="nav_contact">
+                    اړیکه
+                </a>
+            </li>
+
+            <li>
+                <a href="#privacy"
+                    class="nav-link"
+                    data-key="nav_privacy">
+                    د محرمیت تګلاره
+                </a>
+            </li>
+
+            <li>
+                <a href="#terms"
+                    class="nav-link"
+                    data-key="nav_terms">
+                    شرایط او ضوابط
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+<div class="container my-2">
+
+    <div class="adsense-box">
+        د اعلانونو ځای
+    </div>
+
+</div>
+
+
+<main class="container main-layout">
+
+    <div class="main-content">
+
+
+        <!-- HOME -->
+
+        <section id="home"
+            class="page-section active-section">
+
+            <div class="hero-card">
+
+                <h2 data-key="hero_title">
+                    ښه راغلاست Noamani ویب‌سایټ ته!
+                </h2>
+
+                <p data-key="hero_desc">
+                    دلته تاسو کولی شئ په بېلابېلو موضوعاتو کې نوي،
+                    معتبر او ګټور معلومات ترلاسه کړئ.
+                </p>
+
+            </div>
+
+
+            <h2 class="section-title"
+                data-key="latest_articles">
+                وروستۍ مقالې
+            </h2>
+
+
+            <div class="articles-grid">
+
+
+                <!-- ARTICLE 1 -->
+
+                <article class="article-card">
+
+                    <div class="placeholder-img">
+                        AI
+                    </div>
+
+                    <div class="article-body">
+
+                        <h4 data-key="art1_title">
+                            د مصنوعي ځیرکتیا ګټې
+                        </h4>
+
+                        <p data-key="art1_desc">
+                            د AI مهمې ګټې او د زده‌کوونکو لپاره یې استعمال.
+                        </p>
+
+                        <a href="#ai-article"
+                            class="read-more"
+                            data-key="read_more">
+                            نور ولولئ ←
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ARTICLE 2 -->
+
+                <article class="article-card">
+
+                    <div class="placeholder-img">
+                        Technology
+                    </div>
+
+                    <div class="article-body">
+
+                        <h4 data-key="art2_title">
+                            د ډیجیټل دور ټیکنالوژي
+                        </h4>
+
+                        <p data-key="art2_desc">
+                            د نوې ټیکنالوژۍ اهمیت، ګټې او راتلونکی.
+                        </p>
+
+                        <a href="#technology-article"
+                            class="read-more"
+                            data-key="read_more">
+                            نور ولولئ ←
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ARTICLE 3 -->
+
+                <article class="article-card">
+
+                    <div class="placeholder-img">
+                        Success
+                    </div>
+
+                    <div class="article-body">
+
+                        <h4 data-key="art3_title">
+                            د بریا ترلاسه کولو مهم اصول
+                        </h4>
+
+                        <p data-key="art3_desc">
+                            د خپلو موخو د ترلاسه کولو لپاره مهمې لارښوونې.
+                        </p>
+
+                        <a href="#success-article"
+                            class="read-more"
+                            data-key="read_more">
+                            نور ولولئ ←
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- AI ARTICLE -->
+
+        <section id="ai-article"
+            class="page-section">
+
+            <div class="article-page">
+
+                <div class="article-cover">
+                    AI
+                </div>
+
+                <h2 data-key="ai_title">
+                    په ۲۰۲۶ کال کې د مصنوعي ځیرکتیا (AI) ګټې او د زده‌کوونکو لپاره یې استعمال
+                </h2>
+
+                <p data-key="ai_intro">
+                    مصنوعي ځیرکتیا یا AI د نننۍ نړۍ له مهمو ټکنالوژیو څخه ده.
+                    دا ټکنالوژي د معلوماتو په تحلیل، زده‌کړه، لیکلو، ژباړې او
+                    څېړنه کې له خلکو سره مرسته کوي.
+                </p>
+
+                <h3 data-key="ai_what">
+                    مصنوعي ځیرکتیا څه ده؟
+                </h3>
+
+                <p data-key="ai_what_text">
+                    مصنوعي ځیرکتیا هغه ټکنالوژي ده چې کمپیوټرونو او سافټویرونو ته
+                    اجازه ورکوي ځینې داسې دندې ترسره کړي چې عموماً د انسان فکر
+                    او تحلیل ته اړتیا لري.
+                </p>
+
+                <h3 data-key="ai_benefits">
+                    د زده‌کوونکو لپاره مهمې ګټې
+                </h3>
+
+                <h4 data-key="ai_b1">
+                    ۱. د درسونو په پوهېدو کې مرسته
+                </h4>
+
+                <p data-key="ai_b1_text">
+                    AI کولی شي ستونزمن درسونه په ساده ژبه تشریح کړي او بېلګې وړاندې کړي.
+                </p>
+
+                <h4 data-key="ai_b2">
+                    ۲. د ژبو زده‌کړه
+                </h4>
+
+                <p data-key="ai_b2_text">
+                    زده‌کوونکي کولی شي د کلمو معنا، ژباړه، ګرامر او د جملو جوړښت زده کړي.
+                </p>
+
+                <h4 data-key="ai_b3">
+                    ۳. د څېړنې لپاره مرسته
+                </h4>
+
+                <p data-key="ai_b3_text">
+                    AI د یوې موضوع د څېړنې، معلوماتو تنظیمولو او د زده‌کړې
+                    د پلان جوړولو لپاره ګټور کېدای شي.
+                </p>
+
+                <h4 data-key="ai_b4">
+                    ۴. د وخت سپما
+                </h4>
+
+                <p data-key="ai_b4_text">
+                    د یادښتونو لنډول، معلومات تنظیمول او د زده‌کړې پلان جوړول
+                    د AI له لارې اسانه کېدای شي.
+                </p>
+
+                <h3 data-key="ai_warning">
+                    مهم احتیاط
+                </h3>
+
+                <p data-key="ai_warning_text">
+                    AI باید د زده‌کوونکي د خپل فکر او زده‌کړې بدیل نه وي.
+                    مهم معلومات باید له باوري سرچینو څخه هم وکتل شي،
+                    ځکه AI کله ناکله تېروتنې کولی شي.
+                </p>
+
+                <h3 data-key="ai_conclusion">
+                    پایله
+                </h3>
+
+                <p data-key="ai_conclusion_text">
+                    مصنوعي ځیرکتیا د زده‌کوونکو لپاره یوه ګټوره وسیله ده.
+                    که په سمه توګه وکارول شي، د زده‌کړې، څېړنې او وخت
+                    سپما کې مرسته کولی شي.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- TECHNOLOGY ARTICLE -->
+
+        <section id="technology-article"
+            class="page-section">
+
+            <div class="article-page">
+
+                <div class="article-cover">
+                    Technology
+                </div>
+
+                <h2 data-key="tech_title">
+                    د ډیجیټل دور ټیکنالوژي او راتلونکی
+                </h2>
+
+                <p data-key="tech_intro">
+                    ټیکنالوژي د انسانانو د ژوند ډېری برخې بدلې کړې دي.
+                    له زده‌کړې او اړیکو څخه تر کاروبار او معلوماتو پورې،
+                    ډیجیټل وسایل هره ورځ ډېر مهم کېږي.
+                </p>
+
+                <h3 data-key="tech_1">
+                    د ټیکنالوژۍ اهمیت
+                </h3>
+
+                <p data-key="tech_1_text">
+                    عصري ټیکنالوژي خلکو ته اجازه ورکوي چې معلومات په چټکۍ
+                    ترلاسه کړي، له نورو سره اړیکه ونیسي او خپلې ورځنۍ چارې
+                    په اسانه ترسره کړي.
+                </p>
+
+                <h3 data-key="tech_2">
+                    په زده‌کړه کې استعمال
+                </h3>
+
+                <p data-key="tech_2_text">
+                    انټرنېټ، موبایل او کمپیوټر زده‌کوونکو ته د کتابونو،
+                    تعلیمي ویډیوګانو او نورو معلوماتي سرچینو د موندلو
+                    اسانتیا برابروي.
+                </p>
+
+                <h3 data-key="tech_3">
+                    راتلونکی
+                </h3>
+
+                <p data-key="tech_3_text">
+                    تمه کېږي چې په راتلونکو کلونو کې مصنوعي ځیرکتیا،
+                    اتومات سیستمونه او ډیجیټل خدمات لا ډېر پرمختګ وکړي.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SUCCESS ARTICLE -->
+
+        <section id="success-article"
+            class="page-section">
+
+            <div class="article-page">
+
+                <div class="article-cover">
+                    Success
+                </div>
+
+                <h2 data-key="success_title">
+                    د بریا ترلاسه کولو مهم اصول
+                </h2>
+
+                <p data-key="success_intro">
+                    بریا یوازې د فرصت په انتظار ترلاسه کېږي نه؛ بلکې
+                    هدف، دوامداره هڅه، زده‌کړه او صبر هم مهم رول لري.
+                </p>
+
+                <h3 data-key="success_1">
+                    ۱. روښانه هدف وټاکئ
+                </h3>
+
+                <p data-key="success_1_text">
+                    کله چې انسان خپل هدف په واضح ډول وپېژني، کولی شي
+                    خپلې هڅې په منظم ډول ورته برابرې کړي.
+                </p>
+
+                <h3 data-key="success_2">
+                    ۲. دوامداره زده‌کړه
+                </h3>
+
+                <p data-key="success_2_text">
+                    هره ورځ د نوي شي زده‌کړه د شخصي او مسلکي پرمختګ
+                    لپاره مهمه ده.
+                </p>
+
+                <h3 data-key="success_3">
+                    ۳. صبر او دوام
+                </h3>
+
+                <p data-key="success_3_text">
+                    ډېرې موخې په یوه ورځ نه ترلاسه کېږي. صبر او دوام
+                    انسان سره مرسته کوي چې له ستونزو وروسته هم خپل هدف تعقیب کړي.
+                </p>
+
+                <h3 data-key="success_4">
+                    ۴. له تېروتنو زده‌کړه
+                </h3>
+
+                <p data-key="success_4_text">
+                    تېروتنه د زده‌کړې یوه برخه ده. مهمه دا ده چې انسان
+                    له خپلې تېروتنې درس واخلي او بیا هڅه وکړي.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ABOUT -->
+
+        <section id="about"
+            class="page-section">
+
+            <div class="page-card">
+
+                <h2 data-key="about_title">
+                    زموږ په اړه
+                </h2>
+
+                <p data-key="about_content">
+                    Noamani یو خپلواک معلوماتي ویب‌سایټ دی چې موخه یې
+                    لوستونکو ته ګټور، باوري او تعلیمي معلومات وړاندې کول دي.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CONTACT -->
+
+        <section id="contact"
+            class="page-section">
+
+            <div class="page-card">
+
+                <h2 data-key="contact_title">
+                    له موږ سره اړیکه
+                </h2>
+
+                <p data-key="contact_desc">
+                    که پوښتنه، وړاندیز یا نظر لرئ، لاندې فورمه ډکه کړئ.
+                </p>
+
+                <form class="contact-form">
+
+                    <div class="form-group">
+
+                        <label data-key="form_name">
+                            نوم:
+                        </label>
+
+                        <input type="text"
+                            name="name"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label data-key="form_email">
+                            بریښنالیک:
+                        </label>
+
+                        <input type="email"
+                            name="email"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label data-key="form_msg">
+                            پیغام:
+                        </label>
+
+                        <textarea name="message"
+                            rows="5"
+                            required></textarea>
+
+                    </div>
+
+                    <button type="submit"
+                        class="btn-submit"
+                        data-key="form_send">
+                        لېږل
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PRIVACY -->
+
+        <section id="privacy"
+            class="page-section">
+
+            <div class="page-card">
+
+                <h2 data-key="privacy_title">
+                    د محرمیت تګلاره
+                </h2>
+
+                <p data-key="privacy_content">
+                    ستاسو د شخصي معلوماتو محرمیت زموږ لپاره مهم دی.
+                    موږ هڅه کوو چې ستاسو معلومات په خوندي ډول وساتو.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- TERMS -->
+
+        <section id="terms"
+            class="page-section">
+
+            <div class="page-card">
+
+                <h2 data-key="terms_title">
+                    شرایط او ضوابط
+                </h2>
+
+                <p data-key="terms_content">
+                    د Noamani ویب‌سایټ ټول مطالب د معلوماتي او تعلیمي
+                    موخو لپاره وړاندې کېږي. د ویب‌سایټ په کارولو سره
+                    تاسو د دې شرایطو منل کوئ.
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- SIDEBAR -->
+
+    <aside>
+
+        <div class="widget">
+
+            <h4 data-key="sidebar_about">
+                د Noamani په اړه
+            </h4>
+
+            <p data-key="sidebar_about_text">
+                د پښتو، دري او انګلیسي لوستونکو لپاره معلوماتي سرچینه.
+            </p>
+
+        </div>
+
+        <div class="adsense-box">
+            د اعلانونو ځای
+        </div>
+
+    </aside>
+
+</main>
+
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <p>
+            © 2026 Noamani -
+            <span data-key="footer_rights">
+                ټول حقوق خوندي دي.
+            </span>
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+  </html>
