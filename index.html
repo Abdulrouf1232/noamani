@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Noamani | معلوماتي کتابتون</title>
+
+    <meta name="description"
+        content="Noamani یو درې ژبی معلوماتي ویب‌سایټ دی چې د زده‌کړې، ټکنالوژۍ، AI، اسلامي معلوماتو، افغانستان او عمومي معلوماتو په اړه ګټورې مقالې وړاندې کوي.">
+
+    <meta name="keywords"
+        content="Noamani, نعماني, افغانستان, معلومات, زده کړه, AI, ټکنالوژي, اسلام, پښتو, دري, English">
+
+    <meta name="author" content="Noamani">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container header-inner">
+
+        <a href="#home" class="logo">
+            <span class="logo-mark">N</span>
+            <span class="logo-text">Noamani</span>
+        </a>
+
+        <div class="header-actions">
+
+            <button class="language-btn active"
+                onclick="switchLanguage('ps')">
+                پښتو
+            </button>
+
+            <button class="language-btn"
+                onclick="switchLanguage('dr')">
+                دری
+            </button>
+
+            <button class="language-btn"
+                onclick="switchLanguage('en')">
+                English
+            </button>
+
+            <button class="menu-btn"
+                id="menuBtn"
+                aria-label="Menu">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav class="navigation" id="navigation">
+
+    <div class="container">
+
+        <div class="nav-links">
+
+            <a href="#home" data-key="home">کورپاڼه</a>
+
+            <a href="#education" data-key="education">
+                زده‌کړه
+            </a>
+
+            <a href="#technology" data-key="technology">
+                ټکنالوژي
+            </a>
+
+            <a href="#islamic" data-key="islamic">
+                اسلامي معلومات
+            </a>
+
+            <a href="#afghanistan" data-key="afghanistan">
+                افغانستان
+            </a>
+
+            <a href="#general" data-key="general">
+                عمومي معلومات
+            </a>
+
+            <a href="#about" data-key="about">
+                زموږ په اړه
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="page-section active">
+
+    <div class="container">
+
+        <div class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-badge" data-key="welcome">
+                    د پوهې نړۍ ته ښه راغلاست
+                </span>
+
+                <h1 data-key="hero_title">
+                    معلومات زده کړه، فکر پراخ کړه، راتلونکی جوړ کړه
+                </h1>
+
+                <p data-key="hero_text">
+                    Noamani یو معلوماتي آنلاین کتابتون دی چې د زده‌کړې،
+                    ټکنالوژۍ، اسلامي معلوماتو، افغانستان او عمومي موضوعاتو
+                    په اړه ګټور او منظم معلومات وړاندې کوي.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#education"
+                        class="primary-btn"
+                        data-key="explore">
+                        مقالې وګورئ
+                    </a>
+
+                    <a href="#about"
+                        class="secondary-btn"
+                        data-key="learn_about">
+                        زموږ په اړه
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="book-icon">
+                    📚
+                </div>
+
+                <div class="hero-small-card">
+                    <strong>6+</strong>
+                    <span data-key="categories">
+                        مهمې برخې
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="په مقالو کې لټون وکړئ..."
+                data-key-placeholder="search">
+
+            <button onclick="searchArticles()">
+                🔍
+            </button>
+
+        </div>
+
+
+        <!-- CATEGORIES -->
+
+        <div class="section-heading">
+
+            <span data-key="browse">
+                موضوعات
+            </span>
+
+            <h2 data-key="browse_title">
+                د خپلې خوښې موضوع وټاکئ
+            </h2>
+
+        </div>
+
+
+        <div class="category-grid">
+
+            <a href="#education" class="category-card">
+                <span class="category-icon">📚</span>
+                <h3 data-key="education">زده‌کړه</h3>
+                <p data-key="education_desc">
+                    تعلیمي او د زده‌کړې ګټور معلومات
+                </p>
+            </a>
+
+            <a href="#technology" class="category-card">
+                <span class="category-icon">💻</span>
+                <h3 data-key="technology">ټکنالوژي</h3>
+                <p data-key="technology_desc">
+                    ټکنالوژي، انټرنېټ او مصنوعي ځیرکتیا
+                </p>
+            </a>
+
+            <a href="#islamic" class="category-card">
+                <span class="category-icon">🕌</span>
+                <h3 data-key="islamic">اسلامي معلومات</h3>
+                <p data-key="islamic_desc">
+                    د دین په اړه ګټور او معلوماتي مطالب
+                </p>
+            </a>
+
+            <a href="#afghanistan" class="category-card">
+                <span class="category-icon">🇦🇫</span>
+                <h3 data-key="afghanistan">افغانستان</h3>
+                <p data-key="afghanistan_desc">
+                    د افغانستان تاریخ، کلتور او جغرافیه
+                </p>
+            </a>
+
+            <a href="#general" class="category-card">
+                <span class="category-icon">🌍</span>
+                <h3 data-key="general">عمومي معلومات</h3>
+                <p data-key="general_desc">
+                    بېلابېل ګټور او په زړه پورې معلومات
+                </p>
+            </a>
+
+            <a href="#skills" class="category-card">
+                <span class="category-icon">💡</span>
+                <h3 data-key="skills">ګټور مهارتونه</h3>
+                <p data-key="skills_desc">
+                    د ژوند او ډیجیټل نړۍ عملي مهارتونه
+                </p>
+            </a>
+
+        </div>
+
+
+        <!-- FEATURED -->
+
+        <div class="section-heading">
+
+            <span data-key="featured">
+                غوره مقالې
+            </span>
+
+            <h2 data-key="featured_title">
+                وروستي او مهم معلومات
+            </h2>
+
+        </div>
+
+
+        <div class="article-grid">
+
+            <!-- ARTICLE -->
+
+            <article class="article-card"
+                data-title="مصنوعي ځیرکتیا AI">
+
+                <div class="article-cover ai-cover">
+                    🤖
+                </div>
+
+                <div class="article-content">
+
+                    <span class="article-category"
+                        data-key="technology">
+                        ټکنالوژي
+                    </span>
+
+                    <h3 data-key="article_ai_title">
+                        مصنوعي ځیرکتیا (AI) څه ده؟
+                    </h3>
+
+                    <p data-key="article_ai_desc">
+                        د مصنوعي ځیرکتیا پېژندنه، ګټې، استعمالونه او د زده‌کوونکو
+                        لپاره یې مهمې لارې.
+                    </p>
+
+                    <div class="article-meta">
+                        <span>⏱ 8 min</span>
+                        <span>📖</span>
+                    </div>
+
+                    <a href="#article-ai"
+                        class="read-btn"
+                        data-key="read">
+                        بشپړه مقاله ولولئ
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE -->
+
+            <article class="article-card"
+                data-title="د بریا اصول">
+
+                <div class="article-cover success-cover">
+                    🎯
+                </div>
+
+                <div class="article-content">
+
+                    <span class="article-category"
+                        data-key="skills">
+                        ګټور مهارتونه
+                    </span>
+
+                    <h3 data-key="article_success_title">
+                        د بریا ترلاسه کولو مهم اصول
+                    </h3>
+
+                    <p data-key="article_success_desc">
+                        هدف، هڅه، زده‌کړه، صبر او دوام؛ هغه اصول چې د انسان
+                        د پرمختګ لپاره مهم دي.
+                    </p>
+
+                    <div class="article-meta">
+                        <span>⏱ 7 min</span>
+                        <span>📖</span>
+                    </div>
+
+                    <a href="#article-success"
+                        class="read-btn"
+                        data-key="read">
+                        بشپړه مقاله ولولئ
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE -->
+
+            <article class="article-card"
+                data-title="د وخت مدیریت">
+
+                <div class="article-cover education-cover">
+                    ⏰
+                </div>
+
+                <div class="article-content">
+
+                    <span class="article-category"
+                        data-key="education">
+                        زده‌کړه
+                    </span>
+
+                    <h3 data-key="article_time_title">
+                        د وخت مدیریت او د زده‌کړې نظم
+                    </h3>
+
+                    <p data-key="article_time_desc">
+                        څنګه خپل وخت منظم کړو او د زده‌کړې لپاره مناسب ورځنی پلان جوړ کړو؟
+                    </p>
+
+                    <div class="article-meta">
+                        <span>⏱ 6 min</span>
+                        <span>📖</span>
+                    </div>
+
+                    <a href="#article-time"
+                        class="read-btn"
+                        data-key="read">
+                        بشپړه مقاله ولولئ
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= AI ARTICLE ================= -->
+
+<section id="article-ai" class="article-page">
+
+    <div class="container">
+
+        <article class="book-article">
+
+            <div class="article-top">
+
+                <span class="article-category">
+                    💻 ټکنالوژي
+                </span>
+
+                <span>
+                    ⏱ 8 دقیقې
+                </span>
+
+            </div>
+
+            <h1 data-key="ai_title">
+                مصنوعي ځیرکتیا (AI) څه ده او زموږ په ژوند کې یې څه اهمیت دی؟
+            </h1>
+
+            <p class="article-lead"
+                data-key="ai_intro">
+                مصنوعي ځیرکتیا د عصري ټکنالوژۍ له مهمو برخو څخه ده.
+                دا ټکنالوژي کمپیوټرونو او سافټویرونو ته توان ورکوي چې
+                ځینې داسې دندې ترسره کړي چې عموماً د انسان فکر، تحلیل
+                او پرېکړې ته اړتیا لري.
+            </p>
+
+            <div class="info-box">
+                <strong data-key="important">
+                    مهم ټکی
+                </strong>
+
+                <p data-key="ai_info">
+                    AI د انسان د زده‌کړې بدیل نه دی؛ بلکې یوه وسیله ده
+                    چې د سم استعمال په صورت کې د زده‌کړې او کار په اسانتیا
+                    کې مرسته کوي.
+                </p>
+            </div>
+
+            <h2 data-key="ai_what">
+                مصنوعي ځیرکتیا څه ده؟
+            </h2>
+
+            <p data-key="ai_text1">
+                مصنوعي ځیرکتیا هغه علم او ټکنالوژي ده چې د کمپیوټرونو
+                لپاره داسې سیستمونه جوړوي چې د معلوماتو له تحلیل،
+                د ژبې له پوهېدو، د نمونو له پېژندلو او د ستونزو له حل
+                سره مرسته وکړي.
+            </p>
+
+            <h2 data-key="ai_uses">
+                AI په کومو برخو کې کارېږي؟
+            </h2>
+
+            <ul class="article-list">
+
+                <li data-key="ai_use1">
+                    په زده‌کړه او تعلیمي سیستمونو کې
+                </li>
+
+                <li data-key="ai_use2">
+                    په ژباړه او ژبې زده‌کړه کې
+                </li>
+
+                <li data-key="ai_use3">
+                    په روغتیا او څېړنه کې
+                </li>
+
+                <li data-key="ai_use4">
+                    په کاروبار او معلوماتو تحلیل کې
+                </li>
+
+                <li data-key="ai_use5">
+                    په لیکلو، ډیزاین او ډیجیټل خدمتونو کې
+                </li>
+
+            </ul>
+
+            <h2 data-key="ai_students">
+                د زده‌کوونکو لپاره د AI ګټې
+            </h2>
+
+            <h3 data-key="ai_student1">
+                ۱. د ستونزمنو موضوعاتو تشریح
+            </h3>
+
+            <p data-key="ai_student1_text">
+                زده‌کوونکی کولی شي له AI څخه وغواړي چې یوه ستونزمنه
+                موضوع په ساده ژبه تشریح کړي او بېلګې ورکړي.
+            </p>
+
+            <h3 data-key="ai_student2">
+                ۲. د ژبې زده‌کړه
+            </h3>
+
+            <p data-key="ai_student2_text">
+                AI د کلمو معنا، ژباړه، ګرامر او د جملو په جوړولو کې
+                د زده‌کوونکو مرسته کولی شي.
+            </p>
+
+            <h3 data-key="ai_student3">
+                ۳. د مطالعې پلان
+            </h3>
+
+            <p data-key="ai_student3_text">
+                زده‌کوونکی کولی شي د خپلو مضمونونو لپاره منظم ورځنی
+                یا اوونیز د مطالعې پلان جوړ کړي.
+            </p>
+
+            <h2 data-key="ai_warning">
+                مهم احتیاط
+            </h2>
+
+            <p data-key="ai_warning_text">
+                د AI هره پایله باید سمدستي حقیقت ونه ګڼل شي.
+                ځینې وخت AI تېروتنه کوي. مهم معلومات باید له باوري
+                کتابونو، استادانو او نورو معتبره سرچینو سره هم وکتل شي.
+            </p>
+
+            <div class="conclusion-box">
+
+                <h2 data-key="conclusion">
+                    پایله
+                </h2>
+
+                <p data-key="ai_conclusion">
+                    که مصنوعي ځیرکتیا په مسؤلانه او هوښیار ډول وکارول شي،
+                    د زده‌کړې، څېړنې، کار او ورځني ژوند لپاره ډېره ګټوره
+                    وسیله کېدای شي.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SUCCESS ARTICLE ================= -->
+
+<section id="article-success" class="article-page">
+
+    <div class="container">
+
+        <article class="book-article">
+
+            <div class="article-top">
+
+                <span class="article-category">
+                    💡 ګټور مهارتونه
+                </span>
+
+                <span>
+                    ⏱ 7 دقیقې
+                </span>
+
+            </div>
+
+            <h1 data-key="success_title">
+                د بریا ترلاسه کولو مهم اصول
+            </h1>
+
+            <p class="article-lead"
+                data-key="success_intro">
+                بریا یوازې د فرصت په
